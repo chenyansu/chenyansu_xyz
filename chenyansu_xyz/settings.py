@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'taggit',
+    'django_celery_results', 
+    # 在admin里可以看到的计划任务
+    # 'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -145,3 +148,12 @@ HAYSTACK_CONNECTIONS = {
     },
 }
 HAYSTACK_SEARCH_RESULTS_PER_PAGE  =  8 
+
+
+# celery 配置
+# celery -A chenyansu_xyz -l info
+CELERY_BROKER_URL = 'redis://localhost:6379/0' 
+CELERY_ACCEPT_CONTENT = ['json'] 
+CELERY_TASK_SERIALIZER = 'json' 
+CELERY_RESULT_BACKEND = 'django-db' 
+CELERY_TIMEZONE = 'Asia/Shanghai'
