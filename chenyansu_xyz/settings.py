@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%e_vp*_x^8odq8@$k+yd2qzq^)jc-*hg*2m=zr&x%e-be!#$w8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.chenyansu.xyz',
                 '111.230.64.149',
@@ -159,3 +159,6 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json' 
 CELERY_RESULT_BACKEND = 'django-db' 
 CELERY_TIMEZONE = 'Asia/Shanghai'
+
+#
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
