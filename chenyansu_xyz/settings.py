@@ -25,7 +25,9 @@ SECRET_KEY = '%e_vp*_x^8odq8@$k+yd2qzq^)jc-*hg*2m=zr&x%e-be!#$w8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.chenyansu.xyz',
+                '111.230.64.149',
+                '127.0.0.1']
 
 
 # Application definition
