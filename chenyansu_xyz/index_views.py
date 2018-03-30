@@ -19,10 +19,20 @@ def index(request):
             color:#000; 
             text-align:center;
             }
+        #index_link {
+            text-align:center;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 
     <div id="ICP">
         <p>Copyright © 2018 Powered by 陈严肃 All Rights Reserved.</p>
         <a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank">吉ICP备18001719号</a>
     </div>
+    <div id="index_link">
+        <a href="blog">BLOG</a>
+        <a href="admin"> 后台 </a>
+    </div>
+
     """)
