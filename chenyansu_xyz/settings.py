@@ -145,7 +145,7 @@ EMAIL_HOST = 'smtp.sina.com'
 EMAIL_HOST_USER = os.environ.get('MAIL_USERNAME')
 EMAIL_HOST_PASSWORD = os.environ.get('MAIL_PASSWORD')
 EMAIL_PORT = 25
-EMAIL_USE_TLS = True
+EMAIL_USE_TLS = False
 
 # 搜索引擎
 # 用 python3 manage.py rebuild_index 重建索引，可以考虑建成定时任务
