@@ -24,6 +24,17 @@ def index(request):
             margin-left: auto;
             margin-right: auto;
         }
+        #baidu {
+            width: 800px;
+            position: absolute;
+            top: 305px;
+            left: 50%;
+            margin-left: -160px;
+            height: 158px;
+            padding: 25px;
+
+        }
+        
     </style>
 
     <div id="ICP">
@@ -34,5 +45,18 @@ def index(request):
         <a href="blog">BLOG</a>
         <a href="admin"> 后台 </a>
     </div>
+    <div id="baidu">
+     <form action="http://www.baidu.com/baidu" target="_blank">
+        <table bgcolor="#FFFFFF"><tr><td>
+            <input name=tn type=hidden value=baidu>
+            <a href="http://www.baidu.com/"></a>
+            <input type=text name=word size=30>
+            <input type="submit" value="百度搜索">
+            </td></tr>
+        </table>
+    </form> 
+    
+    </div>
+    
 
     """)
