@@ -43,6 +43,7 @@ def index(request):
     </div>
     <div id="index_link">
         <a href="blog">BLOG</a>
+	<a href="http://www.chenyansu.xyz:8848/nextcloud"> NEXTCLOUD </a>
         <a href="admin"> 后台 </a>
     </div>
     <div id="baidu">
